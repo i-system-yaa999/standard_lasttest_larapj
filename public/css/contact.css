@@ -1,0 +1,254 @@
+/* -------------------------------------------------- */
+:root{
+  --largebox-width:98%;
+  --middlebox-width:90%;
+  --littlebox-width:45%;
+  /* font-size: 20px; */
+}
+html{
+  font-size: 100%;
+}
+.header{
+  text-align: center;
+  font-size: 1rem;
+}
+.contact_frame{
+  display: flex;
+  justify-content: center;
+}
+.contact_tbl{
+  width: 70vw;
+}
+tr{
+  line-height: 55px;
+}
+th{
+  text-align: left;
+  width: 20%;
+}
+/* -------------------------------------------------- */
+.name_row{
+  font-size: 1.1rem;
+}
+.name_box{
+  display: flex;
+  justify-content: space-between;
+}
+.name_box_ex{
+  display: flex;
+  justify-content: space-between;
+  line-height: 20px;
+  margin-top: -10px;
+  padding-bottom: 20px;
+}
+.name_item{
+  width: var(--littlebox-width);
+  border: 1px gray solid;
+  border-radius: 5px;
+  /* line-height: 35px; */
+  padding: 10px;
+  font-size: 1.1rem;
+}
+#full_name{
+  display: none;
+}
+/* -------------------------------------------------- */
+.gender_row{
+  font-size: 1.1rem;
+}
+.gender_box{
+}
+.gender_item{
+  transform:scale(2)
+}
+/* -------------------------------------------------- */
+.email_row{
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+.email_box{
+  display: flex;
+  justify-content: space-between;
+}
+.email_box_ex{
+  line-height: 20px;
+  margin-top: -10px;
+  padding-bottom: 20px;
+}
+.email_item{
+  width: var(--largebox-width);
+  border: 1px gray solid;
+  border-radius: 5px;
+  /* line-height: 35px; */
+  padding: 10px;
+  font-size: 1.1rem;
+}
+/* -------------------------------------------------- */
+.postcode_row{
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+.postcode_box{
+  display: flex;
+  justify-content: space-between;
+  line-height: 35px;
+}
+.postcode_box_ex{
+  line-height: 20px;
+  margin-top: -10px;
+  padding-bottom: 20px;
+
+  display: flex;
+  justify-content: space-between;
+}
+.postcode_item{
+  width: var(--middlebox-width);
+  border: 1px gray solid;
+  border-radius: 5px;
+  /* line-height: 35px; */
+  padding: 10px;
+  font-size: 1.1rem;
+}
+.postcode_item_ex{
+  width: var(--middlebox-width);
+  border: none;
+  width: 30%;
+  background-color: white;
+}
+/* -------------------------------------------------- */
+.address_row{
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+.address_box{
+}
+.address_box_ex{
+  line-height: 20px;
+  margin-top: -10px;
+  padding-bottom: 20px;
+}
+.address_item{
+  width: var(--largebox-width);
+  border: 1px gray solid;
+  border-radius: 5px;
+  /* line-height: 35px; */
+  padding: 10px;
+  font-size: 1.1rem;
+}
+/* -------------------------------------------------- */
+.building_row{
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+.building_box{
+}
+.building_box_ex{
+  line-height: 20px;
+  margin-top: -10px;
+  padding-bottom: 20px;
+}
+.building_item{
+  width: var(--largebox-width);
+  border: 1px gray solid;
+  border-radius: 5px;
+  /* line-height: 35px; */
+  padding: 10px;
+  font-size: 1.1rem;
+}
+/* -------------------------------------------------- */
+.opinion_row{
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+.opinion_box{
+}
+.opinion_box_ex{
+  line-height: 20px;
+  margin-top: -10px;
+  padding-bottom: 20px;
+}
+.opinion_item{
+  width: var(--largebox-width);
+  border: 1px gray solid;
+  border-radius: 5px;
+  /* line-height: 35px; */
+  padding: 10px;
+  font-size: 1.2rem;
+  height: 100px;
+	resize: none;
+}
+.opinion_row th{
+  display: flex;
+  width: 100%;
+  vertical-align: top;
+}
+/* -------------------------------------------------- */
+.submit{
+  font-size: 1rem;
+  margin-top: 20px;
+  /* display: flex;
+  justify-content: center; */
+  text-align: center;
+}
+.submit_btn{
+  color: white;
+  background-color: black;
+  width: 150px;
+  height: 45px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+/* -------------------------------------------------- */
+.footer{
+  height: 50px;
+}
+/* -------------------------------------------------- */
+@media(max-width:1001px){
+  .mini-only{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+  }
+  th,td{
+    width: 100%;
+  }
+  .error{
+    text-align: center;
+  }
+  .error th{
+    display: none;
+  }
+}
+@media(max-width:769px){ 
+  html{
+    font-size: 80%;
+  }
+}
+
+
+
+/* -------------------------------------------------- */
+.red{
+  color: red;
+  font-size: 0.9rem;
+}
+.gray{
+  color: gray;
+  font-size: 0.9rem;
+}
+.error{
+  line-height: 20px;
+  transform: translate(0,-10px);
+}
+/* -------------------------------------------------- */
+button.link_style_btn{
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: #0033cc;
+}
+button.link_style_btn:hover{
+  text-decoration: underline;
+  color: #002080;
+}

@@ -1,0 +1,194 @@
+/* -------------------------------------------------- */
+:root{
+  --littlebox-width:15%;
+}
+html{
+  font-size: 100%;
+}
+ul,li{
+  list-style: none;
+}
+p{
+  margin: 0;
+}
+/* -------------------------------------------------- */
+.header{
+  text-align: center;
+  font-size: 1rem;
+}
+.manage_frame{
+  width: 90vw;
+  border: 2px solid black;
+  margin: 0 auto;
+}
+/* -------------------------------------------------- */
+.name_row{
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+.name_item{
+  width: 70%;
+  border: 1px gray solid;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+}
+/* -------------------------------------------------- */
+.gender_box{
+}
+.gender_item{
+  transform:scale(2)
+}
+/* -------------------------------------------------- */
+.create_row{
+  font-size: 1rem;
+}
+.create_item{
+  width: var(--littlebox-width);
+  border: 1px gray solid;
+  border-radius: 5px;
+  /* line-height: 35px; */
+  padding: 10px;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+/* -------------------------------------------------- */
+.email_row{
+  font-size: 1rem;
+}
+.email_item{
+  width: var(--largebox-width);
+  border: 1px gray solid;
+  border-radius: 5px;
+  /* line-height: 35px; */
+  padding: 10px;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+/* -------------------------------------------------- */
+.search_submit{
+  text-align: center;
+  margin: 20px;
+}
+.submit_btn{
+  color: white;
+  background-color: black;
+  width: 150px;
+  height: 45px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+/* -------------------------------------------------- */
+button.link_style_btn{
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: #0033cc;
+  font-size: 0.9rem;
+}
+button.link_style_btn:hover{
+  text-decoration: underline;
+  color: #002080;
+}
+/* -------------------------------------------------- */
+.page_info{
+display: flex;
+justify-content: space-between;
+}
+.pagination{
+  display: flex;
+  margin: 5px;
+}
+.pagination .page-item{
+  width: 20px;
+  height: 20px;
+  font-size: 0.8rem;
+  text-align: center;
+  border: 1px solid gray;
+}
+.pagination .active{
+  background-color: black;
+  color: white;
+}
+/* -------------------------------------------------- */
+.search_answer{
+  width: 90vw;
+  /* border: 2px solid black; */
+  margin: 70px auto;
+  font-size: 1rem;
+}
+.search_answer .serch_tbl{
+  border-spacing: 0 10px;
+}
+.s_line{
+  border-bottom: 2px solid black;
+}
+.s_id{
+  width: calc(8rem);
+  text-align: center;;
+}
+.s_name{
+  width: calc(16rem);
+  text-align: left;
+}
+.s_gender{
+  width: calc(5rem);
+  text-align: center;
+}
+.s_email{
+  width: calc(30rem);
+  text-align: left;
+}
+.s_opinion{
+  width: calc(25rem);
+  text-align: left;
+}
+.s_reserve{
+  width: calc(4rem);
+  text-align: center;
+}
+.s_delpb{
+  width: calc(5rem);
+  text-align: center;
+}
+.delete_btn{
+  color: white;
+  background-color: black;
+  width: 60px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+/* -------------------------------------------------- */
+.text-ellipsis {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  text-overflow: ellipsis;
+  /* white-space: nowrap; */
+  overflow: hidden; 
+}
+/* -------------------------------------------------- */
+@media(max-width:1001px){
+  .name_row{
+    display: block;
+  }
+  .gender_box{
+    margin-top: 20px;
+  }
+  .gender_item{
+    /* display: block; */
+    width: 10vw;
+    margin: 0;
+    transform:scale(1.5)
+  }
+}
+@media(max-width:769px){ 
+  html{
+    font-size: 80%;
+  }
+}
+
